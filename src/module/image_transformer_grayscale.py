@@ -8,7 +8,8 @@ from PySide6 import QtCore
 from PySide6.QtCore import QThread
 
 
-class ImageTransformer():
+
+class ImageTransformerGrayscale():
 
     def __init__(self, window: MainWindow) -> None:
         self.window = window
