@@ -1,26 +1,22 @@
 #pyside6
 from PySide6.QtWidgets import QApplication
-
-#ui
-import sys
 from qt_material import apply_stylesheet
 
-#module
-from module.image_viewer import ImageViewer
-from module.image_transformer_grayscale import ImageTransformerGrayscale
-from module.image_transformer_dataset_split import ImageTransformerDatasetSplit
-from module.main_window import MainWindow
+from module.application import Application
+from module.runner_image_viewer import ImageViewer
+from module.runner_image_transformer_grayscale import ImageTransformerGrayscale
+from module.runner_image_transformer_dataset_split import ImageTransformerDatasetSplit
 
-#main
-app = QApplication(sys.argv)
+if __name__ == '__main__':
+    q_appication = QApplication()
 
-window = MainWindow()
-image_transformer_grayscale = ImageTransformerGrayscale(window)
-image_transformer_dataset_split = ImageTransformerDatasetSplit(window)
+    app = Application()
+    apply_stylesheet(app, theme='dark_teal.xml')
 
-image_viewer = ImageViewer(window)
+    image_viewer = ImageViewer(app)
+    image_transformer_grayscale = ImageTransformerGrayscale(app)
+    image_transformer_dataset_split = ImageTransformerDatasetSplit(app)
 
-apply_stylesheet(app, theme='dark_teal.xml')
+    app.show()
 
-window.ui.show()
-app.exec()
+    q_appication.exec()

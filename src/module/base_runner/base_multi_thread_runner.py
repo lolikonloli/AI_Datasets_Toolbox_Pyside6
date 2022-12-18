@@ -1,0 +1,2 @@
+class BaseMultiThreadRunner():
+    pass

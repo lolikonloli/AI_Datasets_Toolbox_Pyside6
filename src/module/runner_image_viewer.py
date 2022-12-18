@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QFileDialog
 import PySide6.QtWidgets as QtWidgets
 
-from module.main_window import MainWindow
+from module.application import Application
 import module.utils as utils
 
 from loguru import logger
@@ -11,7 +11,7 @@ import os
 
 class ImageViewer():
 
-    def __init__(self, window: MainWindow) -> None:
+    def __init__(self, window: Application) -> None:
         self.window = window
         self.window.ui.bt_read_image_path.clicked.connect(self.show_image)
         self.window.ui.bt_previous.clicked.connect(self.change_previous_image)

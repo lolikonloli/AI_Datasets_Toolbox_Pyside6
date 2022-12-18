@@ -1,4 +1,4 @@
-from module.main_window import MainWindow
+from module.application import Application
 from PySide6.QtWidgets import QMessageBox
 from PySide6.QtCore import QThread, Signal
 import random
@@ -10,7 +10,7 @@ import module.utils as utils
 
 class ImageTransformerDatasetSplit():
 
-    def __init__(self, window: MainWindow) -> None:
+    def __init__(self, window: Application) -> None:
         self.window = window
         self.window.ui.bt_read_img_folder_path_p3.clicked.connect(self.get_read_img_folder)
         self.window.ui.bt_read_gt_folder_path_p3.clicked.connect(self.get_read_gt_folder)

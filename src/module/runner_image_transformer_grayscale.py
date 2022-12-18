@@ -1,4 +1,4 @@
-from module.main_window import MainWindow
+from module.application import Application
 from PySide6.QtWidgets import QFileDialog
 
 import os
@@ -11,7 +11,7 @@ from PySide6.QtCore import QThread
 
 class ImageTransformerGrayscale():
 
-    def __init__(self, window: MainWindow) -> None:
+    def __init__(self, window: Application) -> None:
         self.window = window
 
         self.window.ui.bt_read_folder_path.clicked.connect(self.select_image_read_folder)

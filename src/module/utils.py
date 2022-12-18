@@ -1,5 +1,5 @@
 import cv2
-from module.main_window import MainWindow
+from module.application import Application
 from PySide6 import QtCore
 from PySide6.QtWidgets import QWidget, QLabel
 from PySide6.QtGui import QImage, QPixmap
@@ -21,7 +21,7 @@ def transform_pixel(img: cv2.Mat, input_num: int, output_num: int):
     return target
 
 #读取文件夹 并设置到label上
-def read_and_set_folder_path(window: MainWindow, messege: str, label: QLabel):
+def read_and_set_folder_path(window: Application, messege: str, label: QLabel):
     path = QFileDialog.getExistingDirectory(window, messege)
     label.setText(path)
     return path
