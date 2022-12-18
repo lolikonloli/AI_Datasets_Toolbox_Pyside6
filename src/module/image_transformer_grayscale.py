@@ -67,4 +67,4 @@ class ImageTransformerThread(QThread):
             cvimg_transformed[cvimg_transformed == self.origin] = self.target
             cv2.imwrite(img_save_path, cvimg_transformed)
 
-            self.singal_update_pb_process.emit(int(100 * i / num_img))
+            self.singal_update_pb_process.emit(int(100 * (i+1) / num_img))
