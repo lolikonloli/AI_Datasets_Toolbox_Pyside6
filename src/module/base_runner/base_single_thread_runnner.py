@@ -1,5 +1,7 @@
-from module.application import MainWindow
+from module.application import Application
+
 
 class BaseSingleThreadRunner():
-    def __init__(self, window: MainWindow) -> None:
+
+    def __init__(self, app: Application) -> None:
         pass

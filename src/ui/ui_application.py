@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_window.ui'
+## Form generated from reading UI file 'application.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.1
 ##
@@ -245,11 +245,11 @@ class Ui_main(object):
 
         self.horizontalLayout_3.addWidget(self.inf_6)
 
-        self.le_train_radio = QLineEdit(self.datasets_split)
-        self.le_train_radio.setObjectName(u"le_train_radio")
-        self.le_train_radio.setAlignment(Qt.AlignCenter)
+        self.p3_le_radio = QLineEdit(self.datasets_split)
+        self.p3_le_radio.setObjectName(u"p3_le_radio")
+        self.p3_le_radio.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout_3.addWidget(self.le_train_radio)
+        self.horizontalLayout_3.addWidget(self.p3_le_radio)
 
 
         self.gridLayout_4.addLayout(self.horizontalLayout_3, 4, 1, 1, 1)
@@ -357,10 +357,10 @@ class Ui_main(object):
         self.lb_save_folder_path.setText(QCoreApplication.translate("main", u"\u4fdd\u5b58\u8def\u5f84", None))
         self.bt_start_process.setText(QCoreApplication.translate("main", u"\u5f00\u59cb\u8f6c\u6362", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.pixel_transform), QCoreApplication.translate("main", u"\u7070\u5ea6\u56fe\u50cf\u7d20\u66ff\u6362", None))
-        self.inf_6.setText(QCoreApplication.translate("main", u"\u8bad\u7ec3\u96c6\u6bd4\u4f8b", None))
-        self.le_train_radio.setInputMask("")
-        self.le_train_radio.setText("")
-        self.le_train_radio.setPlaceholderText(QCoreApplication.translate("main", u"example:0.8", None))
+        self.inf_6.setText(QCoreApplication.translate("main", u"\u5212\u5206\u6bd4\u4f8b", None))
+        self.p3_le_radio.setInputMask("")
+        self.p3_le_radio.setText("")
+        self.p3_le_radio.setPlaceholderText(QCoreApplication.translate("main", u"example:0.8 0.1 0.1", None))
         self.bt_save_folder_path_p3.setText(QCoreApplication.translate("main", u"\u4fdd\u5b58\u6587\u4ef6\u5939", None))
         self.lb_save_folder_path_p3.setText(QCoreApplication.translate("main", u"\u4fdd\u5b58\u8def\u5f84", None))
         self.bt_start_process_p3.setText(QCoreApplication.translate("main", u"\u5f00\u59cb\u8f6c\u6362", None))

@@ -5,7 +5,7 @@ from qt_material import apply_stylesheet
 from module.application import Application
 from module.runner_image_viewer import ImageViewer
 from module.runner_image_transformer_grayscale import ImageTransformerGrayscale
-from module.runner_dataset_split import ImageTransformerDatasetSplit
+from module.multi_runner_dataset_split import MultiRunnerDatasetSplit
 
 if __name__ == '__main__':
     q_appication = QApplication()
@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     image_viewer = ImageViewer(app)
     image_transformer_grayscale = ImageTransformerGrayscale(app)
-    image_transformer_dataset_split = ImageTransformerDatasetSplit(app)
+    image_transformer_dataset_split = MultiRunnerDatasetSplit(app)
 
     app.show()
 

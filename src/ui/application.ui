@@ -372,12 +372,12 @@
           <item>
            <widget class="QLabel" name="inf_6">
             <property name="text">
-             <string>训练集比例</string>
+             <string>划分比例</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="le_train_radio">
+           <widget class="QLineEdit" name="p3_le_radio">
             <property name="inputMask">
              <string/>
             </property>
@@ -388,7 +388,7 @@
              <set>Qt::AlignCenter</set>
             </property>
             <property name="placeholderText">
-             <string>example:0.8</string>
+             <string>example:0.8 0.1 0.1</string>
             </property>
            </widget>
           </item>
