@@ -1,4 +1,5 @@
 from module.application import Application
+
 from PySide6.QtWidgets import QMessageBox
 from PySide6.QtCore import QThread, Signal
 import random
